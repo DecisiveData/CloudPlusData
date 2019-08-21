@@ -10,7 +10,7 @@ In this Cloud + Data event, we will build a cloud data analytics infrastructure 
 
 The tools we will use for this process are:
 
-- Source: [**Salesforce**](https://developer.salesforce.com)
+- Source: [**Salesforce Developer Edition**](https://developer.salesforce.com)
 - Pipeline: [**Fivetran**](https://fivetran.com/signup/decisive-data)
 - Warehouse: [**Snowflake**](https://trial.snowflake.com/?utm_source=decisive-data&utm_medium=referral&utm_campaign=self-service-partner-referral-decisive-data)
 - Analytics: [**Tableau Online**](https://www.tableau.com/products/online/request-trial)
@@ -21,8 +21,8 @@ In this event, data from Salesforce will be replicated with Fivetran into Snowfl
 
 ## Provisioning
 
-- Salesforce Developer Account: https://developer.salesforce.com Free account, no credit card
-- Snowflake Trial: [https://trial.snowflake.com](https://trial.snowflake.com/?utm_source=decisive-data&utm_medium=referral&utm_campaign=self-service-partner-referral-decisive-data) $400 free credits
+- Snowflake Trial: [https://trial.snowflake.com](https://trial.snowflake.com/?utm_source=decisive-data&utm_medium=referral&utm_campaign=self-service-partner-referral-decisive-data) $400 free credits, no credit card: choose Enterprise edition, Amazon Web Services, US West (Oregon), this will take 15 minutes
+- Salesforce Developer Edition: https://developer.salesforce.com Free account with sample data & API access, no credit card needed
 - Fivetran Trial: *Sign up through Snowflake Partner Connect inside Snowflake*
 - Tableau Online Trial: [https://www.tableau.com/partner-trial](https://www.tableau.com/products/online/request-trial) 14 days, no credit card
 
