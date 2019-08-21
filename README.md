@@ -10,7 +10,7 @@ In this Cloud + Data event, we will build a cloud data analytics infrastructure 
 
 The tools we will use for this process are:
 
-- Source: [**Salesforce**](https://www.salesforce.com)
+- Source: [**Salesforce**](https://developer.salesforce.com)
 - Pipeline: [**Fivetran**](https://fivetran.com/signup/decisive-data)
 - Warehouse: [**Snowflake**](https://trial.snowflake.com/?utm_source=decisive-data&utm_medium=referral&utm_campaign=self-service-partner-referral-decisive-data)
 - Analytics: [**Tableau Online**](https://www.tableau.com/products/online/request-trial)
