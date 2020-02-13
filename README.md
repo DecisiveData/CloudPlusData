@@ -11,6 +11,7 @@ In this Cloud + Data event, we will build a cloud data analytics infrastructure 
 The tools we will use for this process are:
 
 - Source: [**Salesforce Developer Edition**](https://developer.salesforce.com)
+- Source: [**Google Sheets**](https://docs.google.com/spreadsheets/d/1anwwZf62cF_9oShKdCa188z6oPqBO2U96psCya0bgCY/edit?usp=sharing)
 - Pipeline: [**Fivetran**](https://fivetran.com/signup/decisive-data)
 - Warehouse: [**Snowflake**](https://trial.snowflake.com/?utm_source=decisive-data&utm_medium=referral&utm_campaign=self-service-partner-referral-decisive-data)
 - Analytics: [**Tableau Online**](https://www.tableau.com/products/online/request-trial)
@@ -28,10 +29,17 @@ In this event, data from Salesforce will be replicated with Fivetran into Snowfl
 
 # Source Setup - Salesforce
 
-To connect pull data from Salesforce there are two options:
+To connect & pull data from Salesforce there are two options:
 
 1. **EXISTING ACCOUNT**: Use your active Salesforce account. The Salesforce account plan level must be Enterprise or higher OR have purchased API calls.
 2. **DEVELOPER ACCOUNT**: Sign up for a new **free** Salesforce developer account. Developer accounts come with mock data but have free API calls. Sign up at https://developer.salesforce.com/.
+
+# Source Setup - Google Sheets
+
+To connect & pull data from Google Sheets:
+
+1. **Sheet Id**: The Google Sheet is public to the web. The Id of the sheet is: `1anwwZf62cF_9oShKdCa188z6oPqBO2U96psCya0bgCY` and it is accessible at [this link](https://docs.google.com/spreadsheets/d/1anwwZf62cF_9oShKdCa188z6oPqBO2U96psCya0bgCY/edit?usp=sharing).
+2. **Named Range**: The named range is called: `QuotaTable`
 
 # Warehouse Setup - Snowflake
 
