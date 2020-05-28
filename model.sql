@@ -1,3 +1,4 @@
+---------------------SALESFORCE----------------------------
 CREATE OR REPLACE VIEW "DIM_ACCOUNT" COPY GRANTS AS
 SELECT
     --Key
@@ -211,4 +212,33 @@ FROM
     OPPORTUNITY OPP
 WHERE
     OPP.IS_DELETED = FALSE
+;
+
+---------------------TARGETS----------------------------
+CREATE OR REPLACE VIEW "SALES_TARGET"."FACT_QUOTA" AS
+SELECT
+    --Dimension Keys
+    OWNER_ID            AS "Owner Id"
+    ,CLOSE_DATE         AS "Close Date"
+    --Facts
+    ,QUOTA              AS "Quota"
+FROM
+    SALES_TARGET.QUOTA
+;
+
+---------------------BILLING----------------------------
+CREATE OR REPLACE VIEW "BILLING_DBO"."FACT_INVOICE" COPY GRANTS AS
+SELECT
+    --Dimension Keys
+    INV.OPPORTUNITY_ID          AS "Opportunity Id"
+    ,OPP.OWNER_ID               AS "Owner Id"
+    ,OPP.CLOSE_DATE             AS "Close Date"
+    ,INV.INVOICE_DATE           AS "Invoice Date"
+    --Facts
+    ,INV.IS_PAID                AS "Is Paid"
+    ,INV.INVOICE_AMOUNT         AS "Invoice Amount"
+FROM
+            BILLING_DBO.INVOICE         INV
+    JOIN    SALESFORCE_CPD.OPPORTUNITY  OPP ON INV.OPPORTUNITY_ID = OPP.ID
+WHERE 1=1
 ;
